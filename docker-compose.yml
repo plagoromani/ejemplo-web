@@ -1,0 +1,12 @@
+
+version: '2'
+
+services:
+  bind9:
+    image: internetsystemsconsortium/bind9:9.16
+    ports:
+    - 53:53
+    volumes:
+      - config:/etc/bind
+volumes:
+  config:
